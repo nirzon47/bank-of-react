@@ -1,3 +1,4 @@
+import Dropdown from './Dropdown'
 import Header from './Header'
 import Sliders from './Sliders'
 
@@ -16,6 +17,7 @@ const App = () => {
 		<div>
 			<Header />
 			<Sliders data={data} setData={setData} />
+			<Dropdown data={data} setData={setData} />
 		</div>
 	)
 }

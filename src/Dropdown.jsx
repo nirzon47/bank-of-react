@@ -1,13 +1,25 @@
-const Dropdown = () => {
+const Dropdown = ({ data, setData }) => {
+	const handleChange = (e) => {
+		setData({ ...data, loanTerm: Number(e.target.value) })
+	}
+
 	return (
-		<div>
+		<div className='px-8'>
 			<p className='text-xs'>Tenure</p>
-			<select className='w-full max-w-xs select select-bordered' id='loanTerm'>
-				<option>5 years</option>
-				<option>10 years</option>
-				<option>15 years</option>
-				<option>20 years</option>
-				<option>25 years</option>
+			<select
+				className='w-full max-w-xs select select-bordered'
+				id='loanTerm'
+				onChange={handleChange}
+				defaultValue={5}
+				value={data.loanTerm}
+			>
+				<option value={5} selected>
+					5 years
+				</option>
+				<option value={10}>10 years</option>
+				<option value={15}>15 years</option>
+				<option value={20}>20 years</option>
+				<option value={25}>25 years</option>
 			</select>
 		</div>
 	)

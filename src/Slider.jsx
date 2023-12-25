@@ -3,7 +3,7 @@ const Slider = ({ min, max, step, label, type, id, value, onChange }) => {
 		<div className='w-96'>
 			<h2 className='mb-2 text-sm font-medium text-zinc-700'>{label}</h2>
 			<p className='mb-2 text-lg font-bold'>$ {value}</p>
-			<div className='tooltip w-96' value-tip={value}>
+			<div className='tooltip w-96' data-tip={value}>
 				<input
 					onChange={onChange}
 					type='range'

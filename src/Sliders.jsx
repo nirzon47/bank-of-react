@@ -76,7 +76,6 @@ const Sliders = ({ data, setData }) => {
 				id={'interestRate'}
 				type='percent'
 			/>
-			<Dropdown />
 		</div>
 	)
 }
