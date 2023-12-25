@@ -32,7 +32,8 @@ const ChartResult = ({ data }) => {
 	return (
 		<div className='w-52 md:px-8 md:w-96 '>
 			<h3 className='mb-8 text-xl font-medium text-center'>
-				Monthly Payment: ${monthlyPayment.toFixed(2)}
+				Monthly Payment: ${' '}
+				<span className='text-indigo-800'>{monthlyPayment.toFixed(2)}</span>
 			</h3>
 			<Pie data={pieChartData} />
 		</div>

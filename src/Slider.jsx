@@ -10,7 +10,7 @@ const Slider = ({ min, max, step, label, type, id, value, onChange }) => {
 					min={min}
 					max={max}
 					step={step}
-					className='mb-1 range'
+					className='mb-1 range range-accent'
 					id={id}
 					value={value}
 				/>
@@ -32,7 +32,7 @@ const Slider = ({ min, max, step, label, type, id, value, onChange }) => {
 					max={max}
 					step={step}
 					value={value}
-					className='mb-1 range'
+					className='mb-1 range range-error'
 				/>
 			</div>
 			<div className='flex justify-between'>
