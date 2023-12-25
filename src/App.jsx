@@ -1,6 +1,7 @@
 import Dropdown from './Dropdown'
 import Header from './Header'
 import Sliders from './Sliders'
+import ChartResult from './Chart'
 
 import { useState } from 'react'
 
@@ -16,8 +17,15 @@ const App = () => {
 	return (
 		<div>
 			<Header />
-			<Sliders data={data} setData={setData} />
-			<Dropdown data={data} setData={setData} />
+			<div className='flex items-center justify-center gap-24'>
+				<div className='flex flex-col justify-center'>
+					<Sliders data={data} setData={setData} />
+					<Dropdown data={data} setData={setData} />
+				</div>
+				<div className='p-8'>
+					<ChartResult data={data} />
+				</div>
+			</div>
 		</div>
 	)
 }
