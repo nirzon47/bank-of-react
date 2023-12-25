@@ -1,5 +1,4 @@
 import Slider from './Slider'
-import Dropdown from './Dropdown'
 
 const Sliders = ({ data, setData }) => {
 	return (

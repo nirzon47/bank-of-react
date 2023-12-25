@@ -1,9 +1,9 @@
 const Slider = ({ min, max, step, label, type, id, value, onChange }) => {
 	return type === 'money' ? (
-		<div className='w-96'>
+		<div className='w-52 md:w-96'>
 			<h2 className='mb-2 text-sm font-medium text-zinc-700'>{label}</h2>
 			<p className='mb-2 text-lg font-bold'>$ {value}</p>
-			<div className='tooltip w-96' data-tip={value}>
+			<div className='w-full too52 md:w-96' data-tip={value}>
 				<input
 					onChange={onChange}
 					type='range'
@@ -21,10 +21,10 @@ const Slider = ({ min, max, step, label, type, id, value, onChange }) => {
 			</div>
 		</div>
 	) : (
-		<div className='w-96'>
+		<div className='w-52 md:w-96'>
 			<h2 className='mb-2 text-sm font-medium text-zinc-700'>{label}</h2>
 			<p className='mb-2 text-lg font-bold'>{value} %</p>
-			<div className='tooltip w-96' data-tip={value}>
+			<div className='w-full too52 md:w-96' data-tip={value}>
 				<input
 					onChange={onChange}
 					type='range'
